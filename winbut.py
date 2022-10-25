@@ -20,7 +20,7 @@ class Window(tk.Tk):
         helv36 = tkFont.Font(family='Helvetica',
                              size=36, weight='bold')
         tk.Label(mainCanvas, text="職能發展學院", font=('arial', 30),
-                 background='#C9C8CD').place(x=370, y=80)
+                 background='#C9C8CD', foreground='#888888').place(x=370, y=60)
         # END------建立Label
 
 
