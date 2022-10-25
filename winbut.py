@@ -22,6 +22,23 @@ class Window(tk.Tk):
         tk.Label(mainCanvas, text="職能發展學院", font=('arial', 30),
                  background='#C9C8CD', foreground='#888888').place(x=370, y=60)
         # END------建立Label
+        # ------建立buttonFrame
+        buttonFrame = tk.Frame(mainCanvas, width=130,
+                               height=300, background="#ffffff")
+        buttonFrame.place(x=100, y=50)
+        # END------建立buttonFrame
+
+        # ------建立buttonFrame
+        bgImage1 = Image.open('icon1.png')
+        self.tkImage1 = ImageTk.PhotoImage(bgImage1)
+        btn1 = tk.Button(buttonFrame, image=self.tkImage1, borderwidth=0)
+        btn1.pack()  # padx=10, pady=10)
+
+        bgImage2 = Image.open('icon1.png')
+        self.tkImage2 = ImageTk.PhotoImage(bgImage2)
+        btn2 = tk.Button(buttonFrame, image=self.tkImage2, borderwidth=0)
+        btn2.pack()  # padx=10, pady=10)
+        # END------建立buttonFrame
 
 
 def main():
