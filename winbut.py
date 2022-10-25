@@ -31,14 +31,19 @@ class Window(tk.Tk):
         # ------建立buttonFrame
         bgImage1 = Image.open('icon1.png')
         self.tkImage1 = ImageTk.PhotoImage(bgImage1)
-        btn1 = tk.Button(buttonFrame, image=self.tkImage1, borderwidth=0)
+        btn1 = tk.Button(buttonFrame, image=self.tkImage1,
+                         borderwidth=0, command=self.btn1click)
         btn1.pack()  # padx=10, pady=10)
 
         bgImage2 = Image.open('icon1.png')
         self.tkImage2 = ImageTk.PhotoImage(bgImage2)
-        btn2 = tk.Button(buttonFrame, image=self.tkImage2, borderwidth=0)
+        btn2 = tk.Button(buttonFrame, image=self.tkImage2,
+                         borderwidth=0, command=self.btn1click)
         btn2.pack()  # padx=10, pady=10)
         # END------建立buttonFrame
+
+    def btn1click(self):
+        print("userClick")
 
 
 def main():
